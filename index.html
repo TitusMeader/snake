@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Google</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+
+		<header class="wrap">
+			<p class="highscore">High Score: <span id="high_score_value">0</span></p>
+			<h1>Snacke™
+</h1>
+			<p class="score">Score: <span id="score_value">0</span></p>
+		</header>
+		<canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
+
+		<!-- Game Over Screen -->
+		<div id="gameover" class="gameover">
+			<h2>Game Over</h2>
+			<p>press <span style="background-color: #FFF5FF; color: #000001">R</span> to begin a</p>
+			<button class="button" id="newgame_gameover">new game</button>
+			<button class="button" id="setting_gameover">settings</button>
+			<button class="button" id="mainMenu_gameover">main menu</button>
+		</div>
+
+		<!-- Setting screen -->
+		<div id="setting" class="setting">
+			<h2>Settings</h2>
+
+			<button class="button" id="newgame_setting">new game</button>
+			<button class="button" id="mainMenu_setting">main menu</button>
+			<div class="scrollableSettings">
+				<p>Speed:
+					<ul>
+						<li>
+							<input id="speed0" type="radio" name="speed" value="300"/>
+							<label for="speed0" class="button">Very Slow</label>
+							
+						</li>
+						<li>
+							<input id="speed1" type="radio" name="speed" value="120" checked />
+							<label for="speed1" class="button">Slow</label>
+						</li>
+						<li>
+							<input id="speed2" type="radio" name="speed" value="75" />
+							<label for="speed2" class="button">Normal</label>
+						</li>
+						<li>
+							<input id="speed3" type="radio" name="speed" value="35" />
+							<label for="speed3" class="button">Fast</label>
+						</li>
+						<li>
+							<input id="speed4" type="radio" name="speed" value="20" />
+							<label for="speed4" class="button">Very Fast</label>
+						</li>
+            <li>
+              <input id="speed5" type="radio" name="speed" value="5"/>
+							<label for="speed5" class="button">VERY Fast</label>
+						</li>
+					</ul>
+				</p>
+				
+				<p>Wall:
+					<ul>
+						<li>
+							<input type="radio" id="wallon" name="wall" value="1" checked />
+							<label for="wallon" class="button">On</label>
+						</li>
+						<li>
+							<input type="radio" id="walloff" name="wall" value="0">
+							<label for="walloff" class="button">Off</label>
+						</li>
+					</ul>
+				</p>
+				<p>Controlls:
+						<li>
+							<input type="radio" id="wasdon" name="wasd" value="1" checked>
+							<label for="wasdon" class="button">WASD</label>
+						</li>
+						<li>
+							<input type="radio" id="wasdoff" name="wasd" value="0">
+							<label for="wasdoff" class="button">Arrow</label>
+						</li>
+					</ul>
+				</p>
+				<p>RGB
+						<li>
+							<input type="radio" id="multicolouron" name="multicolour" value="0">
+							<label for="multicolouron" class="button">On</label>
+						</li>
+						<li>
+							<input type="radio" id="multicolouroff" name="multicolour" value="1" checked>
+							<label for="multicolouroff" class="button">Off</label>
+							</li>
+					</ul>
+				</p>
+			</div>
+			
+		</div>
+		
+		<!-- Main Menu Screen -->
+		<div id="menu" class="menu">
+			<h2>Snacke™
+</h2>
+
+			<button class="button" id="newgame_menu">new game</button>
+			<button class="button" id="setting_menu">settings</button>
+		</div>
+
+		<!-- Pause Screen -->
+		<div class="pause" id="pause">
+			<button class="button" id="resume_pause">Resume</button>
+			<button class="button" id="newgame_pause">New Game</button>
+			<button class="button" id="setting_pause">Settings</button>
+			<button class="button" id="mainMenu_pause">Main Menu</button>
+		</div>
+	</body>
+</html>
